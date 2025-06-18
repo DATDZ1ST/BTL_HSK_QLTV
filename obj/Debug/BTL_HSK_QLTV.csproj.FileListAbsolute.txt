@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\bin\Debug\BTL_HSK_QLTV.exe.config
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\bin\Debug\BTL_HSK_QLTV.exe
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\bin\Debug\BTL_HSK_QLTV.pdb
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmDangNhap.resources
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmMenu.resources
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.Properties.Resources.resources
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.exe
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.pdb
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmTTTK.resources
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmHome.resources
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmGioiThieu.resources
