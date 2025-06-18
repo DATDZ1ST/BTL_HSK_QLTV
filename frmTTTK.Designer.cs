@@ -264,7 +264,7 @@
             this.ClientSize = new System.Drawing.Size(1162, 661);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmTTTK";
-            this.Text = "frmTTTK";
+            this.Text = "Thông tin tài khoản";
             this.Load += new System.EventHandler(this.frmTTTK_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

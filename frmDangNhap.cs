@@ -43,59 +43,6 @@ namespace BTL_HSK_QLTV
 
         private void btn_dang_nhap_Click(object sender, EventArgs e)
         {
-            //string username = txtTaiKhoan.Text.Trim();
-            //string password = txtMatKhau.Text.Trim();
-
-            //if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
-            //{
-            //    MessageBox.Show("Vui lòng nhập tài khoản và mật khẩu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-
-            //using (SqlConnection conn = new SqlConnection(connectionString))
-            //{
-            //    try
-            //    {
-            //        conn.Open();
-
-            //        // Câu truy vấn kiểm tra tài khoản và mật khẩu
-            //        string sql = "SELECT * FROM TaiKhoan WHERE sUserName = @user AND sPassWord = @pass";
-
-            //        SqlCommand cmd = new SqlCommand(sql, conn);
-            //        cmd.Parameters.AddWithValue("@user", username);
-            //        cmd.Parameters.AddWithValue("@pass", password);
-
-            //        SqlDataReader reader = cmd.ExecuteReader();
-
-            //        if (reader.HasRows)
-            //        {
-            //            reader.Read();
-            //            string maNV = reader["sMaNV"].ToString();
-            //            bool quyen = Convert.ToBoolean(reader["bQuyen"]);
-
-            //            MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            //            // TODO: Mở form chính hoặc chuyển tiếp
-            //            // Ví dụ: new MainForm(maNV, quyen).Show(); this.Hide();
-            //            // Ẩn form đăng nhập và mở frmMenu
-            //            this.Hide(); // Ẩn form đăng nhập
-
-            //            frmMenu frm = new frmMenu();
-            //            frm.FormClosed += (s, args) => this.Close(); // Khi frmMenu đóng thì thoát chương trình
-            //            frm.Show();
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        }
-
-            //        reader.Close();
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show("Lỗi kết nối: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
 
             string username = txtTaiKhoan.Text.Trim();
             string password = txtMatKhau.Text.Trim();

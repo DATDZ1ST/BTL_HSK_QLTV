@@ -310,7 +310,7 @@
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.menuStrip1);
             this.Name = "frmMenu";
-            this.Text = "frmMenu";
+            this.Text = "Menu";
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
