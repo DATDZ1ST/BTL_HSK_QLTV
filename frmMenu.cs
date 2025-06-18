@@ -63,12 +63,49 @@ namespace BTL_HSK_QLTV
         private void HDSDToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmGioiThieu f = new frmGioiThieu();
-            addForm (f);
+            addForm(f);
         }
 
         private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTTTK t = new frmTTTK();
+            addForm(t);
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát?", "Thoát chương trình", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+
+            }
+        }
+
+        private void giớiThiệuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGioiThieu f = new frmGioiThieu();
+            addForm(f);
+        }
+
+        private void homeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmHome frm = new frmHome();
+            addForm(frm);
         }
     }
 }
