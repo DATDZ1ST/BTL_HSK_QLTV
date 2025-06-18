@@ -16,6 +16,27 @@ namespace BTL_HSK_QLTV
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mượnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+            frmHome f = new frmHome();
+            addForm(f);
+        }
         private void addForm(Form f)
         {
             this.panelContent.Controls.Clear();
@@ -27,85 +48,45 @@ namespace BTL_HSK_QLTV
             f.FormBorderStyle = FormBorderStyle.None;
             f.Show();
         }
-        private void frmMenu_Load(object sender, EventArgs e)
+
+        private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmHome f = new frmHome();
             addForm(f);
-
         }
 
-        private void InforToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmTTTK f = new frmTTTK();
             addForm(f);
         }
 
-        private void ThoatToolStripMenuItem_Click(object sender, EventArgs e)
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn thoát", "Thoát chương trình", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            DialogResult result = MessageBox.Show("Bạn có muốn đổi tài khoản không?", "Đổi tài khoản", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide(); // Ẩn form hiện tại
+                frmDangNhap f = new frmDangNhap();
+                f.ShowDialog(); // Hiển thị màn hình đăng nhập và chờ
+                this.Show(); // Nếu cần quay lại frmMenu sau khi đăng nhập
+            }
+        }
+
+        private void thoátChươngTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát chứ?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 Application.Exit();
-            }
-            else
-            {
-
-            }
-        }
-
-        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmHome f = new frmHome();
-            addForm(f);
-        }
-
-        private void HDSDToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmGioiThieu f = new frmGioiThieu();
-            addForm(f);
-        }
-
-        private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmTTTK t = new frmTTTK();
-            addForm(t);
-        }
-
-        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Bạn có muốn thoát?", "Thoát chương trình", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            else
-            {
-
             }
         }
 
         private void giớiThiệuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmGioiThieu f = new frmGioiThieu();
-            addForm(f);
-        }
-
-        private void homeToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmHome frm = new frmHome();
-            addForm(frm);
+            addForm(f) ;
         }
     }
 }
