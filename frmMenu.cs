@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BTL_HSK_QLTV
 {
@@ -86,6 +87,12 @@ namespace BTL_HSK_QLTV
         private void giớiThiệuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmGioiThieu f = new frmGioiThieu();
+            addForm(f) ;
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoiMK f = new frmDoiMK();
             addForm(f) ;
         }
     }

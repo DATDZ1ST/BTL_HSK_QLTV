@@ -12,3 +12,4 @@ C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.pdb
 C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmTTTK.resources
 C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmHome.resources
 C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmGioiThieu.resources
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmDoiMK.resources
