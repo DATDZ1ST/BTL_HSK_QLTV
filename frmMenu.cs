@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
+
 namespace BTL_HSK_QLTV
 {
     public partial class frmMenu : Form
@@ -57,6 +58,16 @@ namespace BTL_HSK_QLTV
         }
 
         private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+            frmHome f = new frmHome();
+            addForm(f);
+
+        }
+
+        private void InforToolStripMenuItem_Click(object sender, EventArgs e)
+
         {
             frmTTTK f = new frmTTTK();
             addForm(f);
@@ -78,6 +89,9 @@ namespace BTL_HSK_QLTV
         private void thoátChươngTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn thoát chứ?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        private void ThoatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn thoát", "Thoát chương trình", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 Application.Exit();
@@ -94,6 +108,22 @@ namespace BTL_HSK_QLTV
         {
             frmDoiMK f = new frmDoiMK();
             addForm(f) ;
+            else
+            {
+
+            }
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHome f = new frmHome();
+            addForm(f);
+        }
+
+        private void HDSDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGioiThieu f = new frmGioiThieu();
+            addForm (f);
         }
     }
 }

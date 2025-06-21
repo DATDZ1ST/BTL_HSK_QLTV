@@ -35,6 +35,9 @@
             this.lblTen = new System.Windows.Forms.Label();
             this.btn_cap_nhat = new System.Windows.Forms.Button();
             this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.lb_ten_nguoi_dung = new System.Windows.Forms.Label();
+            this.btn_cap_nhat = new System.Windows.Forms.Button();
+            this.tb_ma_nv = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,11 +45,14 @@
             this.dtp_ngay_sinh = new System.Windows.Forms.DateTimePicker();
             this.txtTenNV = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
+            this.tb_ten_nv = new System.Windows.Forms.TextBox();
+            this.tb_sdt = new System.Windows.Forms.TextBox();
             this.rad_nam = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.rad_nu = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.tb_dia_chi = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_tick_xanh)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +64,9 @@
             this.groupBox1.Controls.Add(this.lblTen);
             this.groupBox1.Controls.Add(this.btn_cap_nhat);
             this.groupBox1.Controls.Add(this.txtMaNV);
+            this.groupBox1.Controls.Add(this.lb_ten_nguoi_dung);
+            this.groupBox1.Controls.Add(this.btn_cap_nhat);
+            this.groupBox1.Controls.Add(this.tb_ma_nv);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label5);
@@ -65,11 +74,14 @@
             this.groupBox1.Controls.Add(this.dtp_ngay_sinh);
             this.groupBox1.Controls.Add(this.txtTenNV);
             this.groupBox1.Controls.Add(this.txtSDT);
+            this.groupBox1.Controls.Add(this.tb_ten_nv);
+            this.groupBox1.Controls.Add(this.tb_sdt);
             this.groupBox1.Controls.Add(this.rad_nam);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.rad_nu);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtDiaChi);
+            this.groupBox1.Controls.Add(this.tb_dia_chi);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -109,6 +121,16 @@
             this.lblTen.Size = new System.Drawing.Size(137, 23);
             this.lblTen.TabIndex = 15;
             this.lblTen.Text = "Tên người dùng";
+            // lb_ten_nguoi_dung
+            // 
+            this.lb_ten_nguoi_dung.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_ten_nguoi_dung.AutoSize = true;
+            this.lb_ten_nguoi_dung.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ten_nguoi_dung.Location = new System.Drawing.Point(423, 149);
+            this.lb_ten_nguoi_dung.Name = "lb_ten_nguoi_dung";
+            this.lb_ten_nguoi_dung.Size = new System.Drawing.Size(137, 23);
+            this.lb_ten_nguoi_dung.TabIndex = 15;
+            this.lb_ten_nguoi_dung.Text = "Tên người dùng";
             // 
             // btn_cap_nhat
             // 
@@ -136,6 +158,16 @@
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(331, 22);
             this.txtMaNV.TabIndex = 2;
+            // 
+            // tb_ma_nv
+            // 
+            this.tb_ma_nv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_ma_nv.Enabled = false;
+            this.tb_ma_nv.Location = new System.Drawing.Point(441, 202);
+            this.tb_ma_nv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_ma_nv.Name = "tb_ma_nv";
+            this.tb_ma_nv.Size = new System.Drawing.Size(331, 22);
+            this.tb_ma_nv.TabIndex = 2;
             // 
             // label6
             // 
@@ -204,6 +236,23 @@
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(331, 22);
             this.txtSDT.TabIndex = 9;
+            // tb_ten_nv
+            // 
+            this.tb_ten_nv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_ten_nv.Location = new System.Drawing.Point(441, 258);
+            this.tb_ten_nv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_ten_nv.Name = "tb_ten_nv";
+            this.tb_ten_nv.Size = new System.Drawing.Size(331, 22);
+            this.tb_ten_nv.TabIndex = 3;
+            // 
+            // tb_sdt
+            // 
+            this.tb_sdt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_sdt.Location = new System.Drawing.Point(441, 424);
+            this.tb_sdt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_sdt.Name = "tb_sdt";
+            this.tb_sdt.Size = new System.Drawing.Size(331, 22);
+            this.tb_sdt.TabIndex = 9;
             // 
             // rad_nam
             // 
@@ -257,6 +306,15 @@
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(331, 22);
             this.txtDiaChi.TabIndex = 6;
+
+            // tb_dia_chi
+            // 
+            this.tb_dia_chi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_dia_chi.Location = new System.Drawing.Point(441, 364);
+            this.tb_dia_chi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_dia_chi.Name = "tb_dia_chi";
+            this.tb_dia_chi.Size = new System.Drawing.Size(331, 22);
+            this.tb_dia_chi.TabIndex = 6;
             // 
             // frmTTTK
             // 
@@ -282,17 +340,26 @@
         private System.Windows.Forms.Label lblTen;
         private System.Windows.Forms.Button btn_cap_nhat;
         private System.Windows.Forms.TextBox txtMaNV;
+        private System.Windows.Forms.Label lb_ten_nguoi_dung;
+        private System.Windows.Forms.Button btn_cap_nhat;
+        private System.Windows.Forms.TextBox tb_ma_nv;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtp_ngay_sinh;
+
         private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.TextBox txtSDT;
+
+        private System.Windows.Forms.TextBox tb_ten_nv;
+        private System.Windows.Forms.TextBox tb_sdt;
         private System.Windows.Forms.RadioButton rad_nam;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rad_nu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDiaChi;
+
+        private System.Windows.Forms.TextBox tb_dia_chi;
     }
 }

@@ -71,15 +71,21 @@ namespace BTL_HSK_QLTV
                 }
             }
         }
+
+
+        }
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
+
 
         private void btn_cap_nhat_Click(object sender, EventArgs e)
         {
 
             
         }
+
     }
 }
