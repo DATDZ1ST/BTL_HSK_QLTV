@@ -58,7 +58,6 @@
     <Compile Include="frmDoiMK.Designer.cs">
       <DependentUpon>frmDoiMK.cs</DependentUpon>
     </Compile>
-
     <Compile Include="frmGioiThieu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +87,9 @@
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="frmDoiMK.resx">
       <DependentUpon>frmDoiMK.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="frmGioiThieu.resx">
       <DependentUpon>frmGioiThieu.cs</DependentUpon>
     </EmbeddedResource>
