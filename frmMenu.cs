@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -77,5 +77,19 @@ namespace BTL_HSK_QLTV
             frmGioiThieu f = new frmGioiThieu();
             addForm(f);
         }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhanVien f = new frmNhanVien();
+            addForm(f);
+        }
+
+        private void độcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDocGia f = new frmDocGia();
+            addForm(f);
+        }
     }
+}
+
 }
