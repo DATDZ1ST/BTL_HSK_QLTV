@@ -1,4 +1,4 @@
-﻿namespace BTL_HSK_QLTV
+namespace BTL_HSK_QLTV
 {
     partial class frmMenu
     {
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.panelContent = new System.Windows.Forms.Panel();
             this.trangChủToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +46,7 @@
             this.trảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phạtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giớiThiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelContent = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,14 +64,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1007, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // panelContent
-            // 
-            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContent.Location = new System.Drawing.Point(0, 28);
-            this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(1007, 561);
-            this.panelContent.TabIndex = 1;
             // 
             // trangChủToolStripMenuItem
             // 
@@ -142,12 +134,14 @@
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
             this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.nhânViênToolStripMenuItem.Text = "Nhân viên";
+            this.nhânViênToolStripMenuItem.Click += new System.EventHandler(this.nhânViênToolStripMenuItem_Click);
             // 
             // độcGiảToolStripMenuItem
             // 
             this.độcGiảToolStripMenuItem.Name = "độcGiảToolStripMenuItem";
             this.độcGiảToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.độcGiảToolStripMenuItem.Text = "Độc giả";
+            this.độcGiảToolStripMenuItem.Click += new System.EventHandler(this.độcGiảToolStripMenuItem_Click);
             // 
             // tácGiảToolStripMenuItem
             // 
@@ -174,19 +168,19 @@
             // mượnToolStripMenuItem
             // 
             this.mượnToolStripMenuItem.Name = "mượnToolStripMenuItem";
-            this.mượnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mượnToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.mượnToolStripMenuItem.Text = "Mượn";
             // 
             // trảToolStripMenuItem
             // 
             this.trảToolStripMenuItem.Name = "trảToolStripMenuItem";
-            this.trảToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.trảToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.trảToolStripMenuItem.Text = "Trả";
             // 
             // phạtToolStripMenuItem
             // 
             this.phạtToolStripMenuItem.Name = "phạtToolStripMenuItem";
-            this.phạtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.phạtToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.phạtToolStripMenuItem.Text = "Phạt";
             // 
             // giớiThiệuToolStripMenuItem
@@ -195,6 +189,14 @@
             this.giớiThiệuToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.giớiThiệuToolStripMenuItem.Text = "Giới thiệu";
             this.giớiThiệuToolStripMenuItem.Click += new System.EventHandler(this.giớiThiệuToolStripMenuItem_Click);
+            // 
+            // panelContent
+            // 
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.Location = new System.Drawing.Point(0, 28);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(1007, 561);
+            this.panelContent.TabIndex = 1;
             // 
             // frmMenu
             // 
