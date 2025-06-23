@@ -56,10 +56,10 @@ namespace BTL_HSK_QLTV
             DialogResult result = MessageBox.Show("Bạn có muốn đổi tài khoản không?", "Đổi tài khoản", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
-                this.Hide(); // Ẩn form hiện tại
+                this.Hide(); //Ẩn form hiện tại
                 frmDangNhap f = new frmDangNhap();
-                f.ShowDialog(); // Hiển thị màn hình đăng nhập và chờ
-                this.Show(); // Nếu cần quay lại frmMenu sau khi đăng nhập
+                f.ShowDialog(); //Hiển thị màn hình đăng nhập
+                this.Show(); //quay lại menu sau khi đăng nhập
             }
         }
 
@@ -75,6 +75,18 @@ namespace BTL_HSK_QLTV
         private void giớiThiệuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmGioiThieu f = new frmGioiThieu();
+            addForm(f);
+        }
+
+        private void trảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPhieuTra f = new frmPhieuTra();
+            addForm(f);
+        }
+
+        private void phạtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPhieuPhat f = new frmPhieuPhat();
             addForm(f);
         }
     }

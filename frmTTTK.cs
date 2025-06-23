@@ -75,63 +75,6 @@ namespace BTL_HSK_QLTV
 
         private void btn_Cap_Nhat_Click(object sender, EventArgs e)
         {
-            //string maNV = txt_MaNV.Text.Trim();
-            //string tenNV = txt_TenNV.Text.Trim();
-            //string gioiTinh = rad_nam.Checked ? "Nam" : "Nữ";
-            //string diaChi = txt_DiaChi.Text.Trim();
-            //string sdt = txt_SDT.Text.Trim();
-            //DateTime ngaySinh = dtp_Ngay_Sinh.Value;
-
-            //if (string.IsNullOrEmpty(tenNV) || string.IsNullOrEmpty(diaChi) || string.IsNullOrEmpty(sdt))
-            //{
-            //    MessageBox.Show("Vui lòng nhập đầy đủ thông tin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-
-            //using (SqlConnection conn = new SqlConnection(connectionString))
-            //{
-            //    try
-            //    {
-            //        conn.Open();
-            //        string sql = @"
-            //    UPDATE NHANVIEN
-            //    SET sTenNV = @tenNV,
-            //        sGioiTinh = @gioiTinh,
-            //        sDiaChi = @diaChi,
-            //        sSdt = @sdt,
-            //        dNgaySinh = @ngaySinh
-            //    WHERE sMaNV = @maNV";
-
-            //        SqlCommand cmd = new SqlCommand(sql, conn);
-            //        cmd.Parameters.AddWithValue("@tenNV", tenNV);
-            //        cmd.Parameters.AddWithValue("@gioiTinh", gioiTinh);
-            //        cmd.Parameters.AddWithValue("@diaChi", diaChi);
-            //        cmd.Parameters.AddWithValue("@sdt", sdt);
-            //        if (!Regex.IsMatch(sdt, @"^0\d{9,10}$"))
-            //        {
-            //            MessageBox.Show("Số điện thoại không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //            return;
-            //        }
-            //        cmd.Parameters.AddWithValue("@ngaySinh", ngaySinh);
-            //        cmd.Parameters.AddWithValue("@maNV", maNV);
-
-            //        int rows = cmd.ExecuteNonQuery();
-
-            //        if (rows > 0)
-            //        {
-            //            MessageBox.Show("Cập nhật thông tin thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //            lbl_Ten.Text = tenNV; 
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Không có bản ghi nào được cập nhật.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //        }
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show("Lỗi cập nhật: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
             string maNV = txt_MaNV.Text.Trim();
             string tenNV = txt_TenNV.Text.Trim();
             string gioiTinh = rad_nam.Checked ? "Nam" : "Nữ";
