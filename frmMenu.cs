@@ -89,5 +89,11 @@ namespace BTL_HSK_QLTV
             frmPhieuPhat f = new frmPhieuPhat();
             addForm(f);
         }
+
+        private void sáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSach f = new frmSach();  
+            addForm(f);
+        }
     }
 }

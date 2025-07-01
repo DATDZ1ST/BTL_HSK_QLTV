@@ -34,3 +34,4 @@ C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\bin\Debug\CrystalDecisions
 C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\bin\Debug\stdole.dll
 C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmBaoCao.resources
 C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_.2894F24D.Up2Date
+C:\Users\Admin\source\repos\BTL_HSK_QLTV\BTL_HSK_QLTV\obj\Debug\BTL_HSK_QLTV.frmSach.resources

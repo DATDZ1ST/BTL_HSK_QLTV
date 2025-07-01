@@ -16,14 +16,14 @@ namespace BTL_HSK_QLTV {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rptInTienPhatTheoThang : ReportClass {
+    public class rptTongTienPhat : ReportClass {
         
-        public rptInTienPhatTheoThang() {
+        public rptTongTienPhat() {
         }
         
         public override string ResourceName {
             get {
-                return "rptInTienPhatTheoThang.rpt";
+                return "rptTongTienPhat.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace BTL_HSK_QLTV {
         
         public override string FullResourceName {
             get {
-                return "BTL_HSK_QLTV.rptInTienPhatTheoThang.rpt";
+                return "BTL_HSK_QLTV.rptTongTienPhat.rpt";
             }
             set {
                 // Do nothing
@@ -90,7 +90,7 @@ namespace BTL_HSK_QLTV {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Nam {
+        public CrystalDecisions.Shared.IParameterField Parameter_sMaPhieuTra {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
@@ -98,9 +98,9 @@ namespace BTL_HSK_QLTV {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedrptInTienPhatTheoThang : Component, ICachedReport {
+    public class CachedrptTongTienPhat : Component, ICachedReport {
         
-        public CachedrptInTienPhatTheoThang() {
+        public CachedrptTongTienPhat() {
         }
         
         [Browsable(false)]
@@ -137,7 +137,7 @@ namespace BTL_HSK_QLTV {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rptInTienPhatTheoThang rpt = new rptInTienPhatTheoThang();
+            rptTongTienPhat rpt = new rptTongTienPhat();
             rpt.Site = this.Site;
             return rpt;
         }

@@ -100,6 +100,12 @@
     <Compile Include="frmPhieuTra.Designer.cs">
       <DependentUpon>frmPhieuTra.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSach.Designer.cs">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTTTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,12 @@
       <DependentUpon>prtThongKeTheoMaTTS.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptInTheoMaTL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInTheoMaTL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rptInTheoSLMaPT.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -132,10 +144,16 @@
       <DependentUpon>rptInTheoSLMNV.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="rptInTienPhatTheoThang.cs">
+    <Compile Include="rptInTienPhatTheoMaPTMax.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>rptInTienPhatTheoThang.rpt</DependentUpon>
+      <DependentUpon>rptInTienPhatTheoMaPTMax.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptTongTienPhat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTongTienPhat.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="frmBaoCao.resx">
@@ -162,6 +180,9 @@
     <EmbeddedResource Include="frmPhieuTra.resx">
       <DependentUpon>frmPhieuTra.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSach.resx">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTTTK.resx">
       <DependentUpon>frmTTTK.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +203,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>prtThongKeTheoMaTTS.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptInTheoMaTL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInTheoMaTL.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptInTheoSLMaPT.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptInTheoSLMaPT.cs</LastGenOutput>
@@ -190,9 +215,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptInTheoSLMNV.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptInTienPhatTheoThang.rpt">
+    <EmbeddedResource Include="rptInTienPhatTheoMaPTMax.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptInTienPhatTheoThang.cs</LastGenOutput>
+      <LastGenOutput>rptInTienPhatTheoMaPTMax.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptTongTienPhat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTongTienPhat.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -87,7 +87,7 @@ namespace BTL_HSK_QLTV
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Thêm phiếu trả thành công!");
-                        LoadData(); // load lại dgv
+                        LoadData(); 
                     }
                     else
                     {
@@ -231,7 +231,6 @@ namespace BTL_HSK_QLTV
                     string query = "SELECT * FROM PHIEUTRASACH where sMaPhieuTra  LIKE @keyword or sMaSach  LIKE @keyword or sMaPhieuMuon  LIKE @keyword or sMaNV  LIKE @keyword or dNgayTra  LIKE @keyword or sMaDG  LIKE @keyword or iMaTinhTrangSach  LIKE @keyword or sMaPhieuPhat  LIKE @keyword";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
-
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     da.Fill(dt);

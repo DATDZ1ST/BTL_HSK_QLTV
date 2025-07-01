@@ -37,7 +37,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnIn_SLMaPT = new System.Windows.Forms.Button();
-            this.btnIn_TongTienPhatTheoThang = new System.Windows.Forms.Button();
+            this.btnIn_TongTienPhat = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvPhieuPhat = new System.Windows.Forms.DataGridView();
             this.txtTienPhat = new System.Windows.Forms.TextBox();
@@ -104,6 +104,7 @@
             this.btnIn_TongTienPhatMax.TabIndex = 46;
             this.btnIn_TongTienPhatMax.Text = "In theo số tiền phạt lớn nhất";
             this.btnIn_TongTienPhatMax.UseVisualStyleBackColor = true;
+            this.btnIn_TongTienPhatMax.Click += new System.EventHandler(this.btnIn_TongTienPhatMax_Click);
             // 
             // btnSua
             // 
@@ -135,15 +136,15 @@
             this.btnIn_SLMaPT.UseVisualStyleBackColor = true;
             this.btnIn_SLMaPT.Click += new System.EventHandler(this.btnIn_SLMaPT_Click);
             // 
-            // btnIn_TongTienPhatTheoThang
+            // btnIn_TongTienPhat
             // 
-            this.btnIn_TongTienPhatTheoThang.Location = new System.Drawing.Point(570, 229);
-            this.btnIn_TongTienPhatTheoThang.Name = "btnIn_TongTienPhatTheoThang";
-            this.btnIn_TongTienPhatTheoThang.Size = new System.Drawing.Size(127, 50);
-            this.btnIn_TongTienPhatTheoThang.TabIndex = 42;
-            this.btnIn_TongTienPhatTheoThang.Text = "In Tổng số tiền phạt theo tháng";
-            this.btnIn_TongTienPhatTheoThang.UseVisualStyleBackColor = true;
-            this.btnIn_TongTienPhatTheoThang.Click += new System.EventHandler(this.btnIn_TongTienPhatTheoThang_Click);
+            this.btnIn_TongTienPhat.Location = new System.Drawing.Point(570, 229);
+            this.btnIn_TongTienPhat.Name = "btnIn_TongTienPhat";
+            this.btnIn_TongTienPhat.Size = new System.Drawing.Size(127, 50);
+            this.btnIn_TongTienPhat.TabIndex = 42;
+            this.btnIn_TongTienPhat.Text = "In Tổng số tiền phạt theo MPT";
+            this.btnIn_TongTienPhat.UseVisualStyleBackColor = true;
+            this.btnIn_TongTienPhat.Click += new System.EventHandler(this.btnIn_TongTienPhatTheoThang_Click);
             // 
             // btnThem
             // 
@@ -262,7 +263,7 @@
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnIn_SLMaPT);
-            this.Controls.Add(this.btnIn_TongTienPhatTheoThang);
+            this.Controls.Add(this.btnIn_TongTienPhat);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dgvPhieuPhat);
             this.Controls.Add(this.txtTienPhat);
@@ -295,7 +296,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnIn_SLMaPT;
-        private System.Windows.Forms.Button btnIn_TongTienPhatTheoThang;
+        private System.Windows.Forms.Button btnIn_TongTienPhat;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dgvPhieuPhat;
         private System.Windows.Forms.TextBox txtTienPhat;

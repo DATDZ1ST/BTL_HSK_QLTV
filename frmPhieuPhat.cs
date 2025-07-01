@@ -250,17 +250,41 @@ namespace BTL_HSK_QLTV
 
         private void btnIn_TongTienPhatTheoThang_Click(object sender, EventArgs e)
         {
-            string fTienPhat = txtTienPhat.Text.Trim();
-            if (string.IsNullOrEmpty(fTienPhat))
+            string sMaPhieuTra = txtMaPhieuTra.Text.Trim();
+            if (string.IsNullOrEmpty(sMaPhieuTra))
             {
-                MessageBox.Show("Vui lòng nhập tiền phạt để in.");
+                MessageBox.Show("Vui lòng nhập mã phiếu trả để in.");
                 return;
             }
 
             try
             {
-                ReportDocument report = new rptInTheoSLMaPT();
-                report.SetParameterValue("@fTienPhat", fTienPhat);
+                ReportDocument report = new rptTongTienPhat();
+                report.SetParameterValue("@sMaPhieuTra", sMaPhieuTra);
+
+                frmBaoCao f = new frmBaoCao();
+                f.Report = report;
+                f.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi in báo cáo: " + ex.Message);
+            }
+        }
+
+        private void btnIn_TongTienPhatMax_Click(object sender, EventArgs e)
+        {
+            //string sMaPhieuPhat = txtMaPhieuPhat.Text.Trim();
+            //if (string.IsNullOrEmpty(sMaPhieuPhat))
+            //{
+            //    MessageBox.Show("Vui lòng nhập mã phiếu phạt để in.");
+            //    return;
+            //}
+
+            try
+            {
+                ReportDocument report = new rptInTienPhatTheoMaPTMax();
+                //report.SetParameterValue("@sMaPhieuPhat", sMaPhieuPhat);
 
                 frmBaoCao f = new frmBaoCao();
                 f.Report = report;
